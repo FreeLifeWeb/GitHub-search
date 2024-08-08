@@ -1,0 +1,78 @@
+.title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.repoBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.lang {
+    max-width: 120px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.langContent {
+    margin: 0;
+    padding: 0;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+
+.bottomBlock {
+    width: 100%;
+}
+
+.bottomDescription {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+}
+
+.descriptionItem {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.08);
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 40px;
+}
+
+.license {
+    width: 100%;
+}

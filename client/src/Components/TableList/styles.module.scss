@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.tableContent {
+    max-width: 960px;
+    width: 100%;
+    padding: 32px 16px 24px 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 24px;
+}
