@@ -3,10 +3,18 @@ import { Repo } from '../../types';
 import { TableCell, TableRow } from '@mui/material';
 import style from './styles.module.scss';
 
+// Определение интерфейса для пропсов компонента
 interface IProps {
-    data: Repo[];
-    setSelectData: (repo: Repo) => void;
+    data: Repo[]; // Массив объектов Repo, содержащий данные для отображения в таблице
+    setSelectData: (repo: Repo) => void; // Функция для обработки выбора репозитория
 }
+
+/**
+ * Компонент TableItem отображает строки таблицы с данными репозиториев.
+ *
+ * @param {IProps} props - Пропсы компонента, включающие данные репозиториев и функцию выбора.
+ * @returns {JSX.Element} - JSX элемент, представляющий строки таблицы.
+ */
 export function TableItem({ data, setSelectData }: IProps) {
     return (
         <>

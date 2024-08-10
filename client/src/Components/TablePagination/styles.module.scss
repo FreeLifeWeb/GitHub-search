@@ -1,0 +1,45 @@
+
+.pagination {
+    display: flex;
+    align-self: flex-end;
+    margin-top: auto; 
+}
+
+.perPage {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.rows {
+    margin-right: 8px;
+}
+
+.perPageCount {
+    margin-right: 26px;
+}
+
+.pageCount {
+    margin-right: 26px;
+
+}
+
+.angleRight {
+    margin-right: 34px;
+    cursor: pointer;
+}
+
+.angleLeft {
+    cursor: pointer;
+}
+
+.rows {
+    margin: 0px;
+    margin-right: 8px;
+}
+
+.perPageSelect {
+    border: none;
+    margin-right: 26px;
+}

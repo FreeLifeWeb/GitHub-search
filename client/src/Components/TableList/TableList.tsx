@@ -1,19 +1,25 @@
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { TableItem } from '../TableItem/TableItem';
 import style from './styles.module.scss';
 import { Repo } from '../../types';
+import { TableHeadComponent } from '../TableHead/TableHead';
+import { TablePagination } from '../TablePagination/TablePagination';
 
+// Определение интерфейса для пропсов компонента
 interface IProps {
-    data: Repo[];
-    setSelectData: (repo: Repo) => void;
+    data: Repo[]; // Массив репозиториев для отображения в таблице
+    setSelectData: (repo: Repo) => void; // Функция для обработки выбора репозитория при клике на строку
 }
+
+/**
+ * Компонент TableList отображает таблицу с данными о репозиториях.
+ *
+ * @param {IProps} props - Пропсы компонента, включающие данные репозиториев и функцию выбора.
+ * @returns {JSX.Element} - JSX элемент, представляющий таблицу с данными.
+ */
 export function TableList({ data, setSelectData }: IProps) {
     return (
         <div className={style.container}>
@@ -21,19 +27,7 @@ export function TableList({ data, setSelectData }: IProps) {
                 <h2 className={style.title}>Результаты поиска</h2>
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>Название</TableCell>
-                                <TableCell align="right">Язык</TableCell>
-                                <TableCell align="right">
-                                    Число форков
-                                </TableCell>
-                                <TableCell align="right">Число звезд</TableCell>
-                                <TableCell align="right">
-                                    Дата обновления
-                                </TableCell>
-                            </TableRow>
-                        </TableHead>
+                        <TableHeadComponent />
                         <TableBody>
                             <TableItem
                                 data={data}
@@ -42,6 +36,7 @@ export function TableList({ data, setSelectData }: IProps) {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                <TablePagination />
             </div>
         </div>
     );

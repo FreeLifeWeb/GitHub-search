@@ -2,9 +2,21 @@ import React from 'react';
 import style from './styles.module.scss';
 import { Repo } from '../../types';
 
+/**
+ * Интерфейс, определяющий типы пропсов для компонента AsideContent.
+ * @property description - Объект репозитория, содержащий информацию о репозитории.
+ */
 interface IProps {
     description: Repo;
 }
+
+/**
+ * Компонент AsideContent отображает информацию о выбранном репозитории.
+ * Показывает название репозитория, количество звезд, описание и лицензию.
+ *
+ * @param {IProps} props - Пропсы компонента.
+ * @returns JSX элемент, представляющий информацию о репозитории.
+ */
 export const AsideContent = ({ description }: IProps) => {
     return (
         <>

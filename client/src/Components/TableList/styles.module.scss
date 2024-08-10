@@ -8,11 +8,14 @@
 }
 
 .tableContent {
+    display: flex;
+    flex-direction: column;
     max-width: 960px;
     width: 100%;
     padding: 32px 16px 24px 24px;
     height: 100%;
     box-sizing: border-box;
+    flex-grow: 1; 
 }
 
 .title {
@@ -21,4 +24,17 @@
     font-weight: 400;
     margin: 0;
     margin-bottom: 24px;
+    font-family: 'Roboto';
+}
+
+.pagination {
+    display: flex;
+    align-self: flex-end;
+    margin-top: auto; 
+}
+
+.perPage {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }

@@ -8,7 +8,12 @@ interface IProps {
 
 export function BasicButton({ children, ...props }: IProps) {
     return (
-        <Button className={style.myButton} variant="contained" {...props}>
+        <Button
+            type="submit"
+            className={style.myButton}
+            variant="contained"
+            {...props}
+        >
             {children}
         </Button>
     );
