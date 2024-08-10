@@ -47,6 +47,14 @@ https://figma.fun/YInVdW
 -   CSS Modules
 -   Sass
 
+### Для запуска проекта:
+
+-   склонируйте репозиторий
+-   введите команду [cd client]
+-   введите команду [npm i]
+-   введите команду [npm start]
+-   перейдите в браузер на http://localhost:3000/
+
 ### Ссылка на деплой проекта (Versel):
 
 -   https://git-hub-search-iota.vercel.app/
